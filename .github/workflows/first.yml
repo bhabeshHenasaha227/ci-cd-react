@@ -16,21 +16,21 @@ jobs:
       - name: setup node
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
           cache: npm     
 
       - name: install dependency 
         run: npm ci
-      - name: install Es Lint 
+      - name: run EsLint 
         run: npm run lint  
 
       - name: make react build 
         run: npm run build
       - name: create artifact
         uses: actions/upload-artifact@v4
-        with :
+        with:
           name: react-build
-          path: /dist
+          path: dist
           retention-days: 7
-          
+
  
