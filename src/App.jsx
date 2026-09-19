@@ -9,7 +9,7 @@ function App() {
 
   return (
     <>
-      <div>code changes </div>
+      <div>react github action  </div>
     </>
   )
 }
