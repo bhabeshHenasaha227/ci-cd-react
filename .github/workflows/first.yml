@@ -17,10 +17,12 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: npm 
+          cache: npm     
 
       - name: install dependency 
-        run: npm ci 
+        run: npm ci
+      - name: install Es Lint 
+        run: npm run lint  
 
       - name: make react build 
         run: npm run build
