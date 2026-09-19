@@ -65,6 +65,7 @@ jobs:
         with:
           name: react-build
           path: dist
+          
           retention-days: 7
 
  
